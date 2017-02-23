@@ -10,7 +10,7 @@ The basic idea of the WTTE-RNN network is this: we want to design a model that c
 
 If you're a graphical person, we want our model to be able to generate something kind of like this:
 
-![Dummy Model Results](http://i.imgur.com/G8ycMOj.png)
+![Dummy Model Results](http://i.imgur.com/EXPKvtm.png)
 
 In order to accomplish this, we design a model that predicts the two parameters that control the shape of the [Weibull distribution](https://en.wikipedia.org/wiki/Weibull_distribution "Wikipedia: Weibull Distribution"), which we'll call alpha and beta (the literature is all over the place on this, for some reason). The Weibull distribution is commonly used to describe time-to-event data, especially in engineering situations, but we won't go into all that detail here. Suffice it to say, it's a handy distribution for this purpose.
 
