@@ -85,7 +85,7 @@ model.fit(train_x, train_y, nb_epoch=250, batch_size=2000, verbose=2, validation
 
 After training this model on the aforementioned jet engine failure data from Nasa (and with no real attempt to optimize anything whatsoever), it becomes apparent that the model is definitely learning _something_. For example, here's what the model predicts for average remaining useful life (survival function = 50%) for each engine in the test data, plotted against the actual remaining useful life:
 
-![Demo WTTE-RNN Performance](http://i.imgur.com/hEAPeqj.png "Performance Graph for WTTE-RNN")
+![Demo WTTE-RNN Performance](http://i.imgur.com/CxCRnzQ.png "Performance Graph for WTTE-RNN")
 
 Many of the engines that the model picks as being closer to failing genuinely are closer to failure, and all of the engines that the model gives a pass to are doing OK. That's not too bad. Of course, there may be a lot more juice to squeeze out here, but I'll leave that as an exercise for somebody else...
 
