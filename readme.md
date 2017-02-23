@@ -88,3 +88,7 @@ After training this model on the aforementioned jet engine failure data from Nas
 ![Demo WTTE-RNN Performance](http://i.imgur.com/xZ5JE27.png)
 
 Many of the engines that the model picks as being closer to failing genuinely are closer to failure, and all of the engines that the model gives a pass to are doing OK. That's not too bad. Of course, there may be a lot more juice to squeeze out here, but I'll leave that as an exercise for somebody else...
+
+# Questions / Comments?
+
+If you've got any questions or comments about what I've posted here, you can obviously open pull requests or issues as appropriate. Also, I've posted a quick blurb about this on my blog: [Recurrent Neural Networks for Churn Prediction](http://daynebatten.com/2017/02/recurrent-neural-networks-churn/ "Churn RNN Blog Post"). I'm usually pretty good about following up on blog comments, so feel free to ask away on there as well.
