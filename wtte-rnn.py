@@ -71,8 +71,12 @@ train = load_file('train.csv')
 test_x = load_file('test_x.csv')
 test_y = load_file('test_y.csv')
 
-train[:, 2:26] = normalize(train[:, 2:26], axis=0)
-test_x[:, 2:26] = normalize(test_x[:, 2:26], axis=0)
+# Combine the X values to normalize them, then split them back out
+all_x = np.concatenate((train[:, 2:26], test_x[:, 2:26]))
+all_x = normalize(all_x, axis=0)
+
+train[:, 2:26] = all_x[0:train.shape[0], :]
+test_x[:, 2:26] = all_x[train.shape[0]:, :]
 
 # Make engine numbers and days zero-indexed, for everybody's sanity
 train[:, 0:2] -= 1
