@@ -2,7 +2,9 @@
 
 I recently ran across [Weibull Time-to-event Recurrent Neural Networks](https://ragulpr.github.io/2016/12/22/WTTE-RNN-Hackless-churn-modeling/ "WTTE-RNN Original Post") (WTTE-RNNs from here on out) for survival prediction. These are the brainchild of Egil Martinsson, a master's degree candidate at the Chalmers University of Technology ([here's his thesis](https://ragulpr.github.io/assets/draft_master_thesis_martinsson_egil_wtte_rnn_2016.pdf "Egil Martinsson Thesis")). Since I do a lot of work with churn data and churn is fundamentally a time-to-event problem, I decided to check them out.
 
-Distilling all of the work in the thesis, the original GitHub post, and the example code down to the bare essentials took quite a bit of doing (or maybe I'm just slow). However, I eventually got my head wrapped around the internals, and decided to code up a bare-bones example using Keras. This is that bare-bones example, trained on some [jet engine failure data from Nasa](https://ti.arc.nasa.gov/tech/dash/pcoe/prognostic-data-repository/ "NASA Prognostics Data Repository").
+Distilling all of the work in the thesis, the original GitHub post, and the example code down to the bare essentials took quite a bit of doing (or maybe I'm just slow). However, I eventually got my head wrapped around the internals, and decided to code up a bare-bones example using Keras. This is that bare-bones example, trained on the following [jet engine failure data from Nasa](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#turbofan "Turbofan Engine Degradation Simulation Data Set").
+
+> A. Saxena and K. Goebel (2008). "Turbofan Engine Degradation Simulation Data Set", NASA Ames Prognostics Data Repository (http://ti.arc.nasa.gov/project/prognostic-data-repository), NASA Ames Research Center, Moffett Field, CA [[Download Dataset]](https://ti.arc.nasa.gov/c/6/)
 
 # The idea
 
